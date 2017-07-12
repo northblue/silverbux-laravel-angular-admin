@@ -42,6 +42,20 @@
           <li ng-show="vm.can('manage.permissions')"><a ui-sref='app.userpermissions'><i class="fa fa-circle-o"></i> <span>User Permissions</span></a></li>
         </ul>
       </li>
+      
+      <li class="treeview">
+        <a href="javascript:void(0)">
+          <i class="fa fa-tasks"></i>
+          <span>Todo</span>
+          <i class="fa fa-angle-left pull-right"></i>
+        </a>
+        <ul class="treeview-menu">
+          <li><a ui-sref="app.uitodolist"><i class="fa  fa-list"></i> Todo List</a></li>
+          <li><a ui-sref="app.uitodoadd"><i class="fa fa-circle-o"></i> Add Tasks</a></li>
+        </ul>
+      </li>
+      
+      
       <li class="treeview">
         <a href="javascript:void(0)">
           <i class="fa fa-files-o"></i>

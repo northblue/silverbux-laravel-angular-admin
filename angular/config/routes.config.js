@@ -74,6 +74,28 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
+    .state('app.uitodolist', {
+      url: '/ui-todolist',
+      data: {
+        auth: true
+      },
+      views: {
+        'main@app': {
+          template: '<ui-todolist></ui-todolist>'
+        }
+      }
+    })
+    .state('app.uitodoadd', {
+      url: '/ui-todoadd',
+      data: {
+        auth: true
+      },
+      views: {
+        'main@app': {
+          template: '<ui-todoadd></ui-todoadd>'
+        }
+      }
+    })    
     .state('app.uitimeline', {
       url: '/ui-timeline',
       data: {
